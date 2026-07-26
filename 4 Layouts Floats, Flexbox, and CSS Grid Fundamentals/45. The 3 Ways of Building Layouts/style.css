@@ -1,0 +1,34 @@
+/*
+This entire section is all about building layouts. 
+let's talk about what layout actually means and also the three major ways in which we can build layouts in CSS right now.
+
+So, in web design and web development, when we say layout, what we mean is basically the way that text,
+images, and all the other content is placed and arranged on the webpage.
+
+So the layout gives this page what we call a visual structure, and then into that structure we can place the content.
+
+There are basically 2 types of layouts which are page layout and component layout.
+
+So page layout is basically what teacher has been talking about up until this point, which is laying out the elements.
+So the big pieces of content inside of a webpage  or a website.
+
+Now, on the other hand, these bigger page layouts are themselves made up of components.
+I.e. there will be multiple content in one container which is nothing but a component.
+And that inside content is also arranged neatly i.e. not in the normal flow means not stacked on each other. 
+So these smaller components also needs some layout. Then together it is placed in the bigger component.
+Which is also placed in a certain way.
+
+The first technique of building layouts in CSS is using float layouts, which is basically the old way of building layouts
+using the float CSS property.
+
+Now, these types of layouts are quickly getting replaced by newer technologies such as Flexbox and CSS Grid,
+but in some cases they are still being used and especially on older websites.
+
+Flexbox is one of the modern ways of laying out elements And in the case of Flexbox,
+it is perfect for building one dimensional layouts. So basically a layout which is just a row and all without using floats.
+So Flexbox might be perfect for simpler component layouts.
+
+Then the other modern way of laying out elements is CSS Grid.
+So with CSS Grid we can actually build complete two dimensional layouts which is perfect for big page layouts
+and also more complex components.
+*/

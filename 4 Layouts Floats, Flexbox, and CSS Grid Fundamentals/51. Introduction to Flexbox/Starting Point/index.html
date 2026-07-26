@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to flexbox</title>
+  </head>
+  <body>
+    <!--- First check the staring page of css-grid and flexbox  -->
+    <h1><a href="../Starter/css-grid.html">Starting Page of CSS-Grid</a></h1>
+    <h1><a href="../Starter/flexbox.html">Starting Page of Flexbox</a></h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- If you set the display : flex then all the elements are now immediately side by side  -->
+    <!--- without usnig floats. And these elements here, we call them the flex items because they are the child element of the flex container.  -->
+    <!--- i.e. nothing but a container class with a div will be a flex container.  -->
+    <!--- Now here each of these elements occupies exactly the space that it needs for its content.  -->
+    <!--- If you extend the brower from smaller to bigger then you will also see the background color of   -->
+    <!--- of the parent elements which, because all child items will shrink because they only occupy the content  -->
+    <!--- making the background of the parent visible as browser's size increases.  -->
+    <h1><a href="./Flexbox/display flex.html">Property Display Flex</a></h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- What we saw above is children occupying the width only as much as it needs. -->
+    <!--- But what about height. The children which has a more height will be used as a   -->
+    <!--- overall height for all other children and container.  -->
+    <!--- Below is the example for it. Check the height of .el--3 class element. -->
+    <h1>
+      <a href="./Flexbox/display flex height.html"
+        >Display Flex height Example</a
+      >
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- If we remove the height i.e. no child has any height, then  -->
+    <!--- Child will occupy the widht and height of only content.  -->
+    <h1>
+      <a href="./Flexbox/display flex no height.html"
+        >Display Flex No height Example</a
+      >
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- Right now, all children content is at top, lets move it to center. The children with height will  -->
+    <!--- not move its content to center, because of height.  -->
+    <!--- This property will remove the height of the children who does not have any height, but was using  -->
+    <!--- the height of the children which has a height.  -->
+    <!--. In place of center we can also use align-items : flex-start or flex-end -->
+    <!--. this will move all the children except height on to top or bottom.  -->
+    <!--. By default it is : align-items : stretch  -->
+    <!--. Means all child elements will get the height of the biggest height in all the child elements.  -->
+    <h1>
+      <a href="./Flexbox/align items center.html"
+        >Property align-items : center</a
+      >
+    </h1>
+    <!--- Using align-items we can center the the child content. But using justify-content:center -->
+    <!--- we can center all the child elements with its content in the parent container element.  -->
+    <!--
+      .flex-start: Items align to the left side of the container.
+      .flex-end: Items align to the right side of the container.
+      .center: Items align at the center of the container.
+      .space-between: Items display with equal spacing between them.
+      .space-around: Items display with equal spacing around them.   
+    -->
+    <h1>
+      <a href="./Flexbox/justify content center.html"
+        >Property justify-content:center</a
+      >
+    </h1>
+    <!--- We can add a even space in all the child elements in the parent container element.-->
+    <h1>
+      <a href="./Flexbox/justify content space between.html"
+        >Property justify-content:space-between</a
+      >
+    </h1>
+  </body>
+</html>

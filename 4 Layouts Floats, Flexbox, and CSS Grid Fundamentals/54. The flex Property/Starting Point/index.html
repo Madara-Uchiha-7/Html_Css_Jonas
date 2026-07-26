@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to flexbox</title>
+  </head>
+  <body>
+    <!--- First check the staring page of css-grid and flexbox  -->
+    <h1><a href="../Starter/css-grid.html">Starting Page of CSS-Grid</a></h1>
+    <h1><a href="../Starter/flexbox.html">Starting Page of Flexbox</a></h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- Remove the gap property. This caused the issue for flex-bases property  -->
+    <!--- Using this property we can add a width to flex items. -->
+    <!--- If the content of flex item is bigger than the width i.e. flex-bases  -->
+    <!--- then flex-bases will be increased automatically for that flex item only.  -->
+    <!--- If width of all flex items is bigger then the container than all of the flex items  -->
+    <!--- width is reduced as needed to fit them into the container. This happens because of  -->
+    <!--- flex-shrink: 1 -->
+    <!--- The 1 is default value here. Just simply make it 0 in .el class style and   -->
+    <!--- if width of all flex items is bigger than the flex container than they will go  -->
+    <!--- out of the container. -->
+    <h1>
+      <a href="./Flexbox/property flex bases.html">Property flex-basis</a>
+    </h1>
+    <!--.  -->
+    <!--- flex-grow : 1  -->
+    <!--- Let's assume that all the children i.e. flex items have some width but in total -->
+    <!--- its not bigger than the container's width. If we set flex-grow:1 then all chidren will  -->
+    <!--- will get a width allocated evenly so that whole container is filled. -->
+    <!--- If you use this to only one flex item, then if container has any space left then  -->
+    <!--- flex-grow : 1 will take that width and will add it to that one flex item.  -->
+    <!--- If you give flex-grow : 1 to all the children and to only one them haas flex-grow : 2  -->
+    <!--- then, lets say container has 60% width remaining, and you have 3 flex items -->
+    <!--- then the items with flex-grow : 1 will get 15% width making it 30% in total and  -->
+    <!--- remaining one will get 30 percent i.e. the double of it which has flex-grow:2  -->
+    <!--- This means the double the empty space is allocated to the flex-grow:2  -->
+    <!--- Higher the number, higher the space is allocated. -->
+    <!--- We can use it with gap property to add some space.   -->
+    <h1>
+      <a href="./Flexbox/property flex grow.html">Property flex-grow</a>
+    </h1>
+    <!--.  -->
+    <!--! Do you remember that flex: property which is the short hand.  -->
+    <!--! flex:1 this will be automatically treated as flex-grow : 1  -->
+  </body>
+</html>

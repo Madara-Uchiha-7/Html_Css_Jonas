@@ -1,0 +1,50 @@
+/*
+. The box model defines how elements are displayed on a webpage and how they are sized.
+. So in this box model, each and every element on a webpage can be seen as a rectangular box,
+. and each of these boxes can have content, a border, and space inside and outside of it.
+. 
+. Content : This is the actual content of element, it can be text, images, table, video, etc.
+. Using CSS properties we can specify both the height and width of the content area.
+.
+. Border : This comes all around the element. Technically still inside of the element.
+.
+. Padding : Next element of the box-model is padding. So, padding is basically invisible white space
+. that we can create around the elements content. I.e. Between the content and its border.
+. Just as border, padding comes inside the element.
+. 
+. Margin : This creates the space around the element. I.e. outside of the element.
+. So in practice, we use margin in order to create space between elements on our page.
+.
+. When we want space between two certain elements, we simply specify the margin property on one of them.
+.
+. So the content, padding, and border altogether are the visible part of the element as we can see it on the page.
+. Then around all that, we can add some margin in order to create space between elements.
+. 
+. There is also something called as a Fill Area And this one can be a bit confusing.
+.
+. So remember that the text content and images are inside the content box, right? Now, the same does not apply for background images
+. or the background color of an element. These properties will actually be applied not only to the content area, but to the entire fill area, 
+. which also includes the padding and the border. So basically if we apply a background image or color, it'll occupy the entire visible part of the element.
+. 
+. we can specify the height and the width of the content area. Now, if we choose not to define the height or width,
+. then the box model will simply imply them based on the content. However, the specified or implied heights and width
+. are actually not the final sizes of the element and that's because the border and the padding are also taken into account.
+. So the final width of an element = left border + left padding + width + right border + rigth padding
+. and 
+. final heigth of an element = top border + top padding + height + bottom border + bottom padding
+.
+. +---------------------------------------------------+
+. |                     MARGIN                        |
+. |  +---------------------------------------------+  |
+. |  |    Fill Area       BORDER                   |  |
+. |  |  +---------------------------------------+  |  |
+. |  |  |                 PADDING               |  |  |
+. |  |  |  +---------------------------------+  |  |  |
+. |  |  |  |             CONTENT             |  |  |  |
+. |  |  |  +---------------------------------+  |  |  |
+. |  |  +---------------------------------------+  |  |
+. |  +---------------------------------------------+  |
+. +---------------------------------------------------+
+.
+.
+*/

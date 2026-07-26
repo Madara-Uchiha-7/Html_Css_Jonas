@@ -1,0 +1,127 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  /** We can change the color of the text using color property. */
+  /*.  */
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+
+  font-family: sans-serif;
+
+  text-transform: uppercase;
+
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+#author {
+  font-style: italic;
+}
+
+.related-author {
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+/** We can change the background of the text using the background-color property. */
+/*.  */
+.main-header {
+  background-color: #f7f7f7;
+}
+
+/** We can add the border using the border property */
+/*. It can accept multiple values i.e. more than one. Seperated by space.*/
+/*.  */
+aside {
+  background-color: #f7f7f7;
+
+  /*- border : width style-of-border color-of-border; */
+  border: 5px solid #1098ad;
+}
+
+/*- Let the css figure out which is the first list i.e. element in the list.*/
+/*- For this we will use pseudo class. */
+/*- li:first-child {} */
+/*- here we are saying, go to all the li tags then we added : and then we are saying apply */
+/*- css to its first li */
+/*- */
+/** font-weight is used to make our text bold */
+/*. */
+li:first-child {
+  font-weight: bold;
+}
+
+/*- Lets try for others too */
+/*. */
+li:last-child {
+  font-style: italic;
+}
+
+/*- Lets target 2nd child, we can also do :nth-child(odd) to target odd elements only.*/
+/*- Similarly there is even. */
+/*. */
+li:nth-child(2) {
+  color: red;
+}
+
+/*- Lets select the first paragraph which is inside the article. */
+/*.  */
+article p:first-child {
+  color: red;
+}
+/*! This will not work because we are saying that go into the artical and select 1st p element */
+/*! But in our article tag there is no 1st p element. hearder tag is its 1st child element.  */
+/*! But article p:last-child {} will work because inside article, p is the last element. */
+
+/*- So basically what this means is that when we mix multiple elements inside of a parent element, */
+/*- then these pseudo-classes don't work really well. They are however perfect for situations like this one */
+/*- where all the child elements are the same. So in a list like ul or ol, all the child elements are supposed to be li.  */
+/*- And so, then this pseudo-class, like first-child, last-child, or nth-child work perfectly.*/

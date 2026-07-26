@@ -1,0 +1,8 @@
+/*
+- In html we have a <section> element, it is same as the <div>, used as container. 
+- There is a <span> elemenet. It is again same as <section> and <div> with one difference. It is a inline element.
+- So, you can add for e.g. some text part from whole <p> element, if you want to apply the style on that small part.
+
+- <blackquote>some text</blackquote>
+- This one is simply usually to write some quote.
+*/

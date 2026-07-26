@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>58. CSS Grid</title>
+  </head>
+  <body>
+    <h1><a href="./CSS Grid/css-grid.html">CSS Grid starter</a></h1>
+    <!--- There are 2 container divs in our HTML file.  -->
+    <!--- We will disable 1 of it using display:none property  -->
+    <!--- Using this will completely remove the element from the page.  -->
+    <h1>
+      <a href="./CSS Grid/Property display none.html">Property Display None</a>
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- Like Flex conatiner and flex items, here we have Grid container and Grid items.  -->
+    <!--- To use CSS Grid, we use display:grid  -->
+    <!--- When we set this to our gird container, this will not change anything  -->
+    <!--- visually. To let a change happen visually, we need to define the 2-D layout.  -->
+    <!--- That is our columns and rows.  -->
+    <!--- For this we will use grid-template-columns:  -->
+    <!--- In this property we can create as many width values we can and for each of these values -->
+    <!--- one column will be created.  -->
+    <!--- e.g. 250px and 150px then this will generate the 2 columns, 1 with the width of 250px and  -->
+    <!--- another will be with the width of 150px  -->
+    <!--- This will put 1, 3, 5, 7 in 1st column and 2, 4, 6, 8 in second.  -->
+    <!--- You will silver background color which is of the container, means some width is remaining. -->
+    <!--- Also you will see number 6 content is bigger than 150px so its going out of it.  -->
+    <!--- This property will create as many rows as necessary. -->
+    <!--- If we give 4 columns that is 4 widths then 4 columns will get created and 2 rows will be  -->
+    <!--- created automatically.  -->
+    <!--! Whichever grid item will have the maximum height in nth row, all other grid items  -->
+    <!--! of that nth row will get that height applied.  -->
+    <h1>
+      <a href="./CSS Grid/Property display and grid template columns.html"
+        >Property Display Grid and grid-template-columns:
+      </a>
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- We will see grid-template-rows : property. Here we can define the hight of the rows.  -->
+    <!--- If any grid item has its own height then it will override that property.  -->
+    <!--- Others will get the height from this property.  -->
+    <!--- Lets do 4 columns and 2 rows this time.  -->
+    <!--- Lets also add a gap in those.  -->
+    <!--- We use the gap property for this. The grid-gap and gap are same.  -->
+    <!--- Here margin property will not work. This will create a gap in columns and in between of rows. -->
+    <!--! In flexbox we can not define the seperate values for all the columns space and rows space -->
+    <!--! at the same time. But in this we can do that.  -->
+    <!--! So, instead of gap :30px, you can use column-gap : number px and row-gap: number px -->
+    <!--! This is same as the gap, only difference is we can add a different space for  -->
+    <!--! columns and rows. -->
+    <h1>
+      <a href="./CSS Grid/Property grid template rows.html"
+        >Property grid-template-rows: and gap:
+      </a>
+    </h1>
+  </body>
+</html>

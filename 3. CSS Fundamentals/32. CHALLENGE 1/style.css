@@ -1,0 +1,47 @@
+body {
+  border: 5px solid black;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+header h1:first-child {
+  background-color: rgba(192, 192, 192, 0.2);
+  text-align: center;
+  text-transform: uppercase;
+}
+#free {
+  font-weight: bold;
+  color: silver;
+}
+li {
+  list-style: square;
+}
+footer button {
+  background-color: black;
+  color: white;
+  /*! Font size increased the button size automatically which I wanted to do but was unable to increase it.*/
+  font-size: 20px;
+  /*! Same happened as above when we used text-transform  */
+  text-transform: uppercase;
+  /*.  */
+  /** The cursor changes to pointer when comes on the button using below property */
+  cursor: pointer;
+}
+footer button:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+/*! On top you can see more-info is used for */
+/*! link, visited, hover, active. These are the 4 states. */
+/*! The order which we are defining above should be fllowed ever time for these 4 states. */
+
+/*! Teacher has used class for each of the element, while I am using element selector. */
+/*! He is saying using classes is future proof, so its better to use classes as much as I can from next time */

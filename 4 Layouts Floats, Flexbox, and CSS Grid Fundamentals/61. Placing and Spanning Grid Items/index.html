@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>58. CSS Grid</title>
+  </head>
+  <body>
+    <h1><a href="./CSS Grid/css-grid.html">CSS Grid starter</a></h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- Sometimes it's important to manually place elements in a grid cell other than the predefined one. -->
+    <!--- We will move the element 8 to the position of element 2 and element 2 at the position of  -->
+    <!--- element 8.  -->
+    <!--- If we do grid-column: 2 / 3; and grid-row: 1 / 2; to element 8 only  -->
+    <!--- then grid cell 2 will take the place of 3, 3 will take the place of 4, and so on, and in -->
+    <!--- the end finally the element 7 will take the place of element 8.  -->
+    <h1>
+      <a href="./CSS Grid/Grid Cell location Change.html"
+        >Grid cells location change</a
+      >
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- If we do grid-column: 2 / 4; then this will span that element for 2 grid cells in that row and will take  -->
+    <!--- all the width with space in between them. This will cause right side grid cells to go to new  -->
+    <!--- grid row which will become a implict. -->
+    <!--- In below case we are saying span the column of element 5 from grid cell 2 to grid cell 4 in 2nd row because thats where it is placed by default.  -->
+    <!--- Because of this you will see that element 6 got automatically shifted to the left side.  -->
+    <!--- and element 2 took the place of element 8 because of the span of element 5 and element 7  -->
+    <!--- went to row 3. If I do the grid-row: 1/3; then element 5 will start from the row 1  -->
+    <!--- and will span itself till the end of the row 2 in its column only. This will not move the element 8 from its location.-->
+    <!--- Element 8 will be placed above the element 5 in this case which is present above the element 5.   -->
+    <!--- But if you do grid-row : 1 / 3 for element 8 which is in the row 1, then  -->
+    <!--- It will span across the 2 rows in that column. But in this case also element 8 will  -->
+    <!--- come on the top of the element 5.  -->
+    <!--- gird-column : 1 / 4 is same as grid-column : 1 / span 3  -->
+    <!--- gird-column : 1 / -1; means span whole row. This Helps when we do not know how many  -->
+    <!--- columns are there. 2 / -1 will span the grid cell from 2nd column till the end of the columns in that elements row. -->
+    <!--- This works because, we know that grid lines have the numbers for each grid cell.  -->
+    <!--- For each grid cell starting there will be one number.  -->
+    <!--- and for last grid cell there will be number at the end too.  -->
+    <!--- E.g. for 4 columns there be total 5 numbers from 1 to 5. 5 will represent the end. -->
+    <!--- Similary there are numbers in negative on grid line which will start from end and will  -->
+    <!--- come till the start. So for 4 colums, last one will start from -1 and will at -5.  -->
+    <!--- If we span the element for 3 rows but lets say originally there were only 2 rows then  -->
+    <!--- new row will get created for that element's column only.  -->
+    <!--- But that new row will not have the big height because its a implicit row now.  -->
+    <h1>
+      <a href="./CSS Grid/Span the gird cell.html"
+        >Spanning the cell for more than 1 grid cell</a
+      >
+    </h1>
+  </body>
+</html>

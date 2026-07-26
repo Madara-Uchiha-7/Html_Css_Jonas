@@ -1,0 +1,65 @@
+/*
+. What happens when there are multiple CSS rules that apply to the same elements?
+. So as we have written our code until this point, we have created a couple of situations
+. in which multiple css lectures, and therefore multiple css rules, apply to exact same element. 
+. Teacher calls this conflicting selectors.
+. Lets see e.g.
+. In html :
+. <p id = "author-text" class = "author"> Hello </p>
+. In css:
+. .author {
+.   font-style : italic; font-size : 18px;
+. }
+. #author-text {
+.   font-size : 20px;
+.}
+. p, li {
+.  font-family : sans-serif; color : #444444; font-size : 22px;
+.}
+. 
+. All these 3 rules above uses font-size property.
+.
+. All of these rules will get applied to the p element. There is only one conflicting property in this.
+. It is font-size. 
+. Highest priority is id attribute. If there are multiple id selector in css, then last one will be used.
+.
+. If there is no id selector then next priority is given to class or a pseudo class selector.
+. If again there are multiple of those then last one will be used.
+.
+. Then next priority is given to the element selector.
+. Again if there are multiple of those then last one will be applied.
+.
+. Then priority is given to the universal selector. i.e. * {}
+. 
+. So, for above, from id selector, font-size : 20px; will be used for p. 
+. And other selectors properties will also get applied to p element e.g.
+. color : #444444; font-style : italic; font-family : sans-serif;
+.
+. Inline styles have more priority over id selectors i.e. the style attribute in HTML element.  
+. 
+. Now, the highest priority is to the 
+. declarations marked with "!important" keyword.
+. E.g. color : green !important;
+. It is basically just a hack that you can use as the last resort to resolve conflicts in your CSS.
+. But this should usually not be used.
+.
+. class and id can have the same name.
+. We can add more than one class using 1 space seperator.
+. E.g. class = "one two-2 three-3"
+.
+.
+.
+. In vs code lets say, for one element you added 3 stlye selectors,
+. one is id selector, one is class selector and one is element selector.
+. Then if you hover over the id selector, vs code will show "Selector Specificity : (1, 0, 0)
+. this means id will have the highest priority.
+.
+. In the style tab of inspect mode, there will be some properties:values which have the line over them.
+. It means they are being overriden in somewhere other selectors. 
+. 
+. There is also a checkbox present on the leftside of the property:value 
+. which can be used to turn on and turn off the property.
+. 
+! So always write your selectors as simple as possible and do not add too much nesting
+! or don't add too many IDs, and classes all in the same selector. 
+. */

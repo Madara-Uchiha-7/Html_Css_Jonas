@@ -1,0 +1,262 @@
+/* 
+- There are different types of boxes in CSS. 
+. E.g. if you open the inspect mode and Click on the Element tab and hover over any H 1 element Then you will see that, H1 element will be highlighted
+. And you will see that highlighted patch span to the whole screen if you see the width.
+. Same is true for header tag, article tag. And really most of the elements are like this.
+
+. But then there are also other elements, so other boxes, so to say, like strong element.
+. It only occupies exactly the space where its content actually is. And the same thing is true for example,  ancher tag.
+. So these types of boxes that only occupy exactly the space that they need for its content 
+. is what we call inline boxes. And on the other hand, all these other boxes
+. so, for example, this paragraph or this H3 heading, these we call block level boxes or block level elements.
+
+. So block level elements or boxes occupy all the space that they can and they basically create line breaks after them
+. i.e. they cannot be side by side with one another, right?
+. 
+* Using CSS we can change the inline boxes to block level elements :->
+* display : block;
+.
+. Block level elements occupy 100% of the parent element's width, no 
+. matter what the content is.
+
+- Inline element:
+. Occupies only the space  necessary for its content.
+. And so, therefore, they can simply stay inside of their parent element without creating any additional space.
+. Caues no line breaks after or before the element.
+. heights and widths do not apply.
+. paddings and margins are applied only horizontally (left and right)
+* Using CSS we can change the  block boxes to inline level elements :->
+* display : inline;
+
+. If you add a padding and margin For top and bottom to inline element Which does not work in reality, And if you visit the Style tab in the inspect mode
+. and go to below to see the diagram of padding and margin,
+. Then you'll see the number which you've added to the padding top and margin top and padding bottom and margin bottom. 
+. Even though in the diagram number is visible, In reality it is not applied due to inline element. 
+
+. Very easy way to check all this is to add the background color to the block and inline elements so you will get the better understanding. 
+. Also if you add the padding and the background color and the padding is for all 4 sides for the inline element, Onscreen it may see that
+. Color may get bigger and bigger, but it is in reality not the case. The content is still small and still is in the one line. 
+
+
+* display : inline-block;
+* Looks like inline from the outside, behaves like block level from inside.
+* Occupies only content space.
+* Cause no line-breaks.
+* We can use margin, padding from all sides and use width, height.
+. Let's say there is the inline element and you want it to behave like inline, but you also want to add a very small or you can say small margin top
+. Then you can use this in such scenarios. 
+
+. img is a inline-block element.
+. 
+*/
+
+/*.  */
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  /*- Shortcut : margin : 0 auto;  */
+}
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  /** We can change the color of the text using color property. */
+  /*.  */
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+
+  font-family: sans-serif;
+
+  text-transform: uppercase;
+
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: inline;
+  background-color: brown;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+#author {
+  font-style: italic;
+}
+
+.related-author {
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+/*.  */
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+
+/*.  */
+.post-img {
+  width: 100%;
+  height: auto;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+/** We can add the border using the border property */
+/*. It can accept multiple values i.e. more than one. Seperated by space.*/
+/*.  */
+aside {
+  background-color: #f7f7f7;
+
+  /*- border : width style-of-border color-of-border; */
+  /* border: 5px solid #1098ad; */
+  padding: 50px 0; /*. This will add padding to top and bottom only */
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  width: 500px;
+}
+
+/** font-weight is used to make our text bold */
+/** margin : 10px; This is again, as above same as border and padding. This is also a short-hand.  */
+/*. */
+li:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/*- Above we added a margin botton to each of the li, but for bottom one, we do not want it so lets remove it. */
+/*! We added a 0 for margin-bottom. Whenever we use 0, we do not specify the unit. */
+/*. */
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/*. We can select more than one element which are not nested using ","  */
+/*. We can also do element:some-pseudo-class, another-element and so on.*/
+/*.  */
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/*. */
+li:nth-child(2) {
+  color: red;
+}
+
+/*- Styling the hyperlinks using pseudo classes. */
+/*- Lets target all the ancher i.e. a tag which have the href attribute*/
+/** text-decoration is used to remove the line which is below the link. */
+/*.  */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/*- Lets add a style to the ancher elements which user has already visited */
+/*.  */
+a:visited {
+  color: #1098dd;
+}
+
+/*- Lets use the hover pseudo class. So, we apply the style whenever the user  */
+/*- hover over the link. */
+/** text-decoration can be used as a short hand property.  */
+/** text-decoration : text-decoration-line  text-decoration-style text-decoration-color */
+/*.  */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+
+/*- Lets see one more psudo class, lets add the style when we click on the ancher element. */
+/*. */
+a:active {
+  background-color: wheat;
+  font-style: italic;
+}
+
+/*  
+! Scenario which we tackled:
+! We made the display block, we added the padding and margin, but what happened is:
+! The nav anchor links are in the header block header element Whose height is fixed. 
+! And the size of our nav anchers gets bigger and each of them went to new line and those do not fit in the header tag anymore.
+! So that's the reason why, usually,  we don't set a fixed height on elements.
+! So, we have commented the height from .main-header.
+*/
+nav a:link {
+  background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block;
+}
+
+/*! We can chain psudo classes */
+nav a:link:last-child {
+  margin-right: 0;
+}

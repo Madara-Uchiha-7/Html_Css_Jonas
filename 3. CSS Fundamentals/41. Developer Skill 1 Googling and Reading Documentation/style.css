@@ -1,0 +1,27 @@
+/*
+. 41. So, let's imagine that you built a form on your webpage and that form has a button
+. but now you don't remember how you can actually add like that mouse cursor to the button when user hovers over the button.
+. Just check on google. 
+. Search : css property to add a mouse cursor to button.
+. Check stackoverflow website or chat gpt. 
+. Or goto developer.mozilla.org i.e. MDN documentation to learn more about specific properties.
+
+. Centering the text in the inline element will not work, because they only occupy the space which is needded.
+. So, They are anchor elements in the NAV element, And you want to center the anchor element's in middle.
+. Since anchor elements are of the inline block, they text-align will not work on them.
+. Also all of them will come on the same line.
+. To inline all of them to center page, we need to use text-align : center; to parent element.
+. Because those inline ancher elements are the content of the parent element.
+
+. Use HTML validator tool
+. in case of missing some tags.
+
+. Use diffchecker to check the differences if needed.
+
+
+. If one selector is way more complex than the other, then many times it's actually
+. the more complex one that gets applied. And so, that's why I also told you before that, you should avoid writing a selector like this.
+. e.g. .main-header nav a:link {}
+. Keep them simple.
+
+*/

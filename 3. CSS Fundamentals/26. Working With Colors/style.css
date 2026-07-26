@@ -1,0 +1,93 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  /** We can change the color of the text using color property. */
+  /*.  */
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+
+  font-family: sans-serif;
+
+  text-transform: uppercase;
+
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+#author {
+  font-style: italic;
+}
+
+.related-author {
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+/** We can change the background of the text using the background-color property. */
+/*.  */
+.main-header {
+  background-color: #f7f7f7;
+}
+
+/** We can add the border using the border property */
+/*. It can accept multiple values i.e. more than one. Seperated by space.*/
+/*.  */
+aside {
+  background-color: #f7f7f7;
+
+  /*- border : width style-of-border color-of-border; */
+  border: 5px solid #1098ad;
+
+  /*- Above line is shortcut for below:  */
+  /* border-width: 5px;
+  border-style: solid;
+  border-color: #1098ad; */
+}

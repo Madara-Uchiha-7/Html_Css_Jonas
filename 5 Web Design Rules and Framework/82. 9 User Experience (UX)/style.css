@@ -1,0 +1,81 @@
+/* 
+UI is a user interface which shows the how much beautiful and
+good the website look.
+UX is user experiance, means how much helpful the website is
+or how easy it is to use.
+E.g.
+Tometo Ketup bottle.
+The older once was the glass bottles with cap on the top.
+And the newer once are plastic bottles with the cap on the top,
+and simply by pressing only the ketup will comeout from the cap.
+Now, both of them have some design, i.e. ui 
+but UX is better on the second one.
+
+Better designed ui increases the UX of user which increases
+the bussiness profit.
+
+you should not create overcomplicate layouts.
+Instead, you should use patterns
+that users are already familiar with instead of trying to be original.
+
+Next up, always make your call-to-action,
+which is usually a button.
+The most prominent element on the screen.
+
+Now, the next rule is a very simple one which is
+that you should use blue text
+and underline text only for links.
+So that's super important because users are so used
+to the pattern that links are blue or underlined,
+that you will really confuse them if you ever use underlined
+or blue text anywhere that is not a link.
+
+Next up, if you use animations in your design, make sure
+that they actually have a purpose and that they are fast.
+like between 200 and 500 milliseconds.
+So don't use animations just because you can
+because that might leave users confused
+and many times it simply doesn't look professional.
+
+Next up, when you design a form, it should be very easy to scan.
+And so in order to do that you should align your labels
+and fields in one single vertical line just
+And another one about forms is
+that you should always offer good feedback for all the actions.
+
+So whatever happens after a form is submitted should clearly be stated
+in your interface because otherwise that might be very frustrating.
+E.g. password is not correct then it should appear below the form
+field in red color. Also thay field should also get red border.
+Also, if success then show some prompt that whatever it is, is sucessfull.
+
+And the final rule for usability
+of your interface is more about web applications,
+which is the law of locality.
+that is basically whenever you have a button
+for a certain action in your user interface, you should place that button wherever
+that will actually create an effect.
+E.g. adding the new todo task in which already there are some taks present
+should be present below like "create todo".
+This "create todo" should be present below the latest created todo task.
+
+Use a descriptive, keyword-focused headline on your main page.
+Dont be vauge or fancy.
+
+Only inclue relevant information, efficiantly! 
+Cut off fluff and make the content 100% clear.
+Now, the reason why this is so important is that every time
+that we add an additional piece of content
+to the page, it will compete with all the other information
+that might be more relevant.
+
+Use simple words to send your message.
+And even more importantly, avoid technical jargon
+that might be relevant in your particular industry,
+but that your users might not even know about.
+You do not want to make user confuse.
+
+If you have a long text, then make sure to break up
+that long wall of text using sub-headings, images,
+block quotes, bullet points, and other things like that.
+*/

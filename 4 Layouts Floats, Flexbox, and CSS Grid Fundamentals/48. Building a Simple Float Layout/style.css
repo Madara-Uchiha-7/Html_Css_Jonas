@@ -1,0 +1,334 @@
+/*
+
+*/
+
+/*.  */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /*- Shortcut : margin : 0 auto;  */
+}
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  /** We can change the color of the text using color property. */
+  /*.  */
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+
+  font-family: sans-serif;
+
+  text-transform: uppercase;
+
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+#author {
+  font-style: italic;
+}
+
+.related-author {
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* background-color: red; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: #f7f7f7;
+
+  /*- border : width style-of-border color-of-border; */
+  /* border: 5px solid #1098ad; */
+  /* padding: 50px 0; . This will add padding to top and bottom only */
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  width: 500px;
+}
+
+/*. */
+li:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/*. */
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/*.  */
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/*. */
+li:nth-child(2) {
+  color: red;
+}
+
+/*.  */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/*.  */
+a:visited {
+  color: #1098dd;
+}
+
+/*.  */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+
+/*. */
+a:active {
+  background-color: wheat;
+  font-style: italic;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px; /*- 50 px from bottom */
+  right: 50px; /*- 50 px from right */
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+p::first-line {
+  color: rebeccapurple;
+}
+
+h3 + p::first-line {
+  color: red;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15;
+  right: -25;
+}
+
+/** Floats */
+/*. Right now image of Laura Jones and text "Posted by Laura Jones on Monday, June 21st 2027" */
+/*. are not side by side. The text is below the image. We can change the display property to */
+/*. to fix this. But lets try to do it using floats.  */
+/*. Lets add a class to above mentioned text element. Same for that image element.  */
+/*.  */
+.author-img {
+  /** The image element will come to the left side of the text from top.  */
+  /** with this, what is going to happen is that this image is basically going to be taken out  */
+  /** of the document flow just like an absolutely positioned element. Now, the difference here with floats  */
+  /** is that then all the other elements will basically float around it. Means the text element will always  */
+  /** follow this image element. */
+  float: left;
+  margin-bottom: 20px;
+}
+.author {
+  /*- For */
+  /*- margin-left: 80px; below is the description */
+  /** Since the .author-img element has been completly taken out from the flow to place it */
+  /** on the left side of the text, Normal margin-left will not work on the text element if  */
+  /** you want to move the text to bit right. Because, the image is you can say over the element of text.  */
+  /** So in such cases you will need to apply more margin.  */
+  /** So, here even though the margin 80px looks a lot, on main window its really not. */
+  /** Its always better to check the margin and etc using style Tab.  */
+  margin-left: 80px;
+  /** margin top will work normally. */
+  margin-top: 10px;
+  /*- To fox that margin left issue, we can also make this element float left */
+  /*- In this case, if you use below line, you will have to reduce the margin-left  */
+  /*. float: left; */
+  /*- If you do margin:right, then whole text element will move to right side.  */
+}
+
+/** Lets make "The Code Magazine on left side and then in same line lets add nav links on right side.  */
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+
+.clear {
+  /*! We can clear left floats, or we can clear right floats. Since above, we are using both */
+  /*! lets use both here.  Otherwise we would have used clear:left; or clear:right;*/
+  /** Now, doing this will bring back the heigt of our header element, which can again use  */
+  /** for styling for example backgroud-color  */
+  clear: both;
+}
+/* 
+Since there was no update, all developers used to use this float property. 
+Whenever they wanted to add four columns in 1 row then they have to add float property to each column. 
+Then they would have to add the empty element in that row or in that parent container. 
+Then they have to come to CSS and clear that float for that parent container's child element.
+*/
+
+/*- Another way around to avoid adding the empty element in the parent element.  */
+/*. The clearfix hack is something that has been widely used for many, many years in the CSS community.  */
+/*. And the reason for that is exactly to avoid having these kind of empty divs in parent element.  */
+/*. We add a class to our header element called "clearfix"  */
+/*. Then we add a after pseudo element on it. */
+/*. And remember that what this one does is to basically */
+/*. create a new element which will be the last child element of the container. */
+/*. And so, in a way, doing this is exactly the same as adding empty div here manually, right?  */
+/*. then hear we add clear:both  */
+/*.  */
+.clearfix::after {
+  clear: both;
+  /*. Remember two particularities about the after pseudo element.  */
+  /*. So, first of all, it only appears if we define something for the content property.  */
+  /*. So, in content, there needs to be something even if it's just like empty text: */
+  content: "";
+  /*. And then, also by default, pseudo elements like "after" and "before" are inline elements. */
+  /*. However, clearing floats like this only really works on a block level element.  */
+  /*. And so we set the display property on this element to "block".  */
+  display: block;
+}
+
+/*. We added background-color to all three elements below, It is to see the block on element clearly */
+/*. on the screen so that you will get help why floating the elements. You can use this other time also. */
+/*. Since areticle and aside both occupy the 100% of width of container because they are block elements, */
+/*. and we want them side by side, so lets reduce the width of them. */
+/*. Since main container is of 1200, lets do 825 and 300. 75px will be the space in them.  */
+/*. Why I kept width: 700px; : Reason given in the end. */
+article {
+  /* background-color: green; */
+  width: 650px;
+  float: left;
+}
+aside {
+  /* background-color: red; */
+  width: 300;
+  /*. This will cause footer will come with aside, even if footer is not part of aside. */
+  /*. Float will cause Elements that come after it will float around that first element i.e. article */
+  /*. So, because article is left float which is first element, and aside is right float, this will   */
+  /*. cause remaining elements or bottom elements to come with it.  */
+  /*. We need to clear the float to keep footer below the article and move only aside to right.  */
+  /*. Since, we already have the element in the footer we do not need to create a empty element inside it  */
+  /*. or use clearfix::after  */
+  float: right;
+}
+footer {
+  /* background-color: yellow; */
+  clear: both;
+}
+
+/*! We can use float:left on both, i.e. article and aside. This will cause both of them   */
+/*! come side by side. But here in our example we need a space in them, so instead of margin   */
+/*! we used a float right, which allowed us to keep that 75px space. If we use float left  */
+/*! then those both elements will come side by side without any space. Then I guess we need to use  */
+/*! margin left on aside.  */
+
+/*! Reason of width: 700px; */
+/*! One issue I faced that Aside element was moved to right But it was moved to right only at its own location.  */
+/*! What I meant to say is it was supposed to move to right Of the article element.   */
+/*! This did not work because width is 1200 but somehow if I keep 900 width to article and */
+/*! 300 to aside then width was getting more than 1200, I guess this is because of some padding  */
+/*! which was causing more width which was making it 900 + 300 + some padding number > 1200  */
+/*! To fix this I reduced the width to 700px. I can also increase the width of cointainer to fix this. */

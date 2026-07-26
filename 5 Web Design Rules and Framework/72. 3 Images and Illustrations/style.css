@@ -1,0 +1,56 @@
+/*  
+So essentially, we can use four different types of images. 
+Product photos : to basically illustrate the product that you're trying to sell on your website
+And that is true for physical projects and also for digital projects, of course,which many times are illustrated using some screenshots of
+object. Also they might show someone using the product or also anything else really that might somehow be related
+to the product or again, to the message of your site.
+
+storytelling photos and illustrations: can be made in many, many different styles. And they're basically a more abstract way of doing storytelling.
+They can also add a lot of originality and personal style to the website and help to really bring out the website personality 
+that you decided to use for your particular page.
+
+
+patterns: patterns might appear kind of as a background of entire sections or they might also appear
+like behind images in order to add some interesting visual detail. So basically, these patterns can be used
+to add a little bit of creativity and visual detail to your pages,
+
+You can search images realted to your need on 
+UnSplash
+Pexels
+DrawKit
+unDraw
+
+One way to use images is to show real people in your images.
+in order to trigger user's emotions. 
+
+Next up is something that many people overlook somehow which is that you can very simply crop your images
+in order to fit your message.
+
+You can combine the photos, illustrations and patterns.
+
+
+how to handle text on images:
+the first one is to darken or brighten the image where the text is and the other one is to only darken it partially,
+and we can achieve that by using a gradient.
+Another one is to position the text into a neutral image area.
+We just need to be mindful about what happens when these images get smaller on a mobile screen
+because then, somehow the text might get overlaid with the rest of the image.
+Now, method number three is to simply put the text in a box which will be over the some part of the image. If you want
+you can make that box a bit transperent. Most of the times the box color is used as white.
+
+we also need to talk about some technical details of actually using images.
+And the first thing here is that we need to account for high resolution screens, such as smartphone screens
+and screens in high end laptops such as Apple's MacBooks or the Dell XPS.
+Now to do that, we need to size our images so that their actual dimensions are twice as large as we want to display them in our layout.
+By default, select the large. And big image files. So that by defualt they will have more resoluation.
+So, when you use them on smaller screens they look good also. and on bigger it will also look good by default due to our higher
+resolution.
+
+But size issue may come in this way:
+For this compress the images to lower size. Using:
+Squoosh
+
+
+when you use multiple images side-by-side, you need to make sure that they have the exact same dimensions 
+or atleast the same aspect ratio.
+*/

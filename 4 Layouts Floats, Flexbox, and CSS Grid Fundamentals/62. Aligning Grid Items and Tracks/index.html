@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>62. Aligning Grid Items and Tracks</title>
+  </head>
+  <body>
+    <h1><a href="./CSS Grid/css-grid.html">CSS Grid starter</a></h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- In this case we will work on the 2nd container.  -->
+    <!--- Aligning grid items in Grid is different that flexbox. -->
+    <!--- Because we can align both the tracks inside the container.  -->
+    <!--- and we can also align the grid items inside of the tracks.  -->
+    <!--- this is because grid items are smaller than the cells that they are in.  -->
+    <!--- Let's now start with aligning the grid tracks inside of the grid container. -->
+    <!--- So basically the columns and the rows inside the grid container.  -->
+    <!--- This Is possible in this case because Grid is smaller than the grid container. -->
+    <!--- So below is the default file, in which you can see that  -->
+    <!--- All 7 items are placed in 3 cols and 2 rows. The remaining -->
+    <!--- background black color is of container. So, apart from black color we have 3 cols and 2 rows, that is what is we call grid. -->
+    <!---  -->
+    <h1>
+      <a href="./CSS Grid/Grid and Grid Container.html"
+        >Grid and Grid Container</a
+      >
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- Aligning tracks inside container. And so these are basically about distributing empty space. -->
+    <!--- We use justify content and align content for this. -->
+    <!--- justiy-content : center will move the whole grid in top middle part.  -->
+    <h1>
+      <a href="./CSS Grid/justify content center.html"
+        >Property justify-content : center</a
+      >
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- Aligning tracks inside container. And so these are basically about distributing empty space. -->
+    <!--- We use justify content and align content for this. -->
+    <!--- justiy-content : space-between will move the whole grid in top middle part.  -->
+    <h1>
+      <a href="./CSS Grid/justify content space between.html"
+        >Property justify-content : space-between</a
+      >
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- Aligning tracks inside container. And so these are basically about distributing empty space. -->
+    <!--- We use justify content and align content for this. -->
+    <!--- align-content : center will move the whole grid whichis in top middle part to mid part of container. -->
+    <!--- I think justify-content : center moves is horizontally and  align-content : center will move it to -->
+    <!--- center vertically.  -->
+    <h1>
+      <a href="./CSS Grid/align content center.html"
+        >Property align-content : center</a
+      >
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- Aligning tracks inside container. And so these are basically about distributing empty space. -->
+    <!--- We use justify content and align content for this. -->
+    <!--- align-content : space-between -->
+    <!--- Moves second row to bottom and 1st row on top. All of this still stays in the middle of top and bottom  -->
+    <!--- because of justify-content : middle  -->
+    <!--- align-content : start is default one, this will take all rows on top, and align-content : end will   -->
+    <!--- take all the rows on bottom.   All of this still stays in the middle of top and bottom  -->
+    <!--- because of justify-content : middle  -->
+    <h1>
+      <a href="./CSS Grid/align content space between.html"
+        >Property align-content : space-between</a
+      >
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- align-content : space-between and justify-content : center with gap -->
+    <h1>
+      <a href="./CSS Grid/Center properties with gap.html"
+        >Center properties with gap</a
+      >
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- Now with all this lets see align-items : center.   -->
+    <!--- Right now we have 6 cells in total. Each grid item element has its own color, i.e. each cell has a color.  -->
+    <!--- (1), (3), (4), (5), (6), (7) are content of grid items i.e. of cells.  -->
+    <!--- So each content will come to middle with this properpty.  -->
+    <!--- They will lose grid-template-rows height with this, except (3) which has its own height.  -->
+    <!--- Why the height did not change before, this is because default property of   -->
+    <!--- align-items is stretch which allowed these grid items to have the height from grid-template-rows  -->
+    <!---  align-items : center caused all of the grid cells to lose its vertical space or height.  -->
+    <!--- Plus you will be able to decied where to keep your cell content in that cell vertically.  -->
+    <h1>
+      <a href="./CSS Grid/Proprety align items center.html"
+        >Proprety align-items : center</a
+      >
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- Lets remove the width or horizontal spacing of grid items as we did above for height. -->
+    <!--- all items with (3) also will lose their width, because (3) also does not have its own width defined. -->
+    <!--- Here you will be able to decied where to keep your cell content in that cell horizontally.  -->
+    <h1>
+      <a href="./CSS Grid/Proprety justify items center.html"
+        >Proprety justify-items : center</a
+      >
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- Above we manipulated grid content on the gird cell for all of the cell's content,  -->
+    <!--- This time lets do it on one perticalar cell's content.  -->
+    <!--- align-self will override align-items i.e. in height or vetically where you want to keep your cell's content -->
+    <!--- in that cell. justify-self will override justify-items-->
+    <!--- i.e. in width or horizontally where you want to keep your cell's content -->
+    <h1>
+      <a href="./CSS Grid/align-self and justify-self.html"
+        >Proprety align-self and justify-self
+      </a>
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- Lets keep all the grid items in the end but only 1 cell in middle  -->
+    <h1>
+      <a href="./CSS Grid/one more example.html"
+        >All grid items in the end but only 1 cell in middle
+      </a>
+    </h1>
+  </body>
+</html>

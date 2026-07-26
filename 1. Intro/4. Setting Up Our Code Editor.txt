@@ -1,0 +1,24 @@
+1. Prettier - Code formatter
+Formats your code when you save it.
+
+-----------------------------------
+
+Go to settings icon and open settings.
+Search "default formatter"
+Set to Prettier.
+
+When should you format your code? Lets set that also:
+Search "format on save"
+Tick te checkbox.
+
+Search for Auto Save in settings.
+Set it to onFocusChange.
+
+Then search tab size and make it 2.
+
+-----------------------------------------------------
+Again go to extenations and install One Monokai.
+After installing select button set the color theme. 
+
+-----------------------------------------------------
+

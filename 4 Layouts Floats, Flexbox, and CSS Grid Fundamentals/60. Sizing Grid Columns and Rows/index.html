@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>58. CSS Grid</title>
+  </head>
+  <body>
+    <h1><a href="./CSS Grid/css-grid.html">CSS Grid starter</a></h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- We already learned how to create columns and rows.   -->
+    <!--- Most of the magic of CSS Grid comes from the new unit called "fr" unit.  -->
+    <!--- Using px give these tracks very rigid dimensions. For e.g. if we resize the browser  -->
+    <!--- then columns and rows will not change their size. If we make browser a lot smaller then   -->
+    <!--- then some columns may go out of container also. We need a flexible columns and rows. -->
+    <!--- This can be achieved using "fr" unit. -->
+    <!--- Lets say we want 3rd column to always fill up the remaining space.  -->
+    <!--- So, in grid-template-columns, we will define the 3rd column value 1fr  -->
+    <!--- fr stands for fractional or just a fraction. -->
+    <!--- Now, 3rd column will take remaining container width. -->
+    <!--- Now, if you increase or decrease the size of browser  -->
+    <!--- then you will see 3rd column will start adjusting accordingly.  -->
+    <!--- If you make browser very small then the columns will againg start going outside of the -->
+    <!--- container. Again, this we can know because the container has the background color.  -->
+    <!--- If you make a 4th columns also 1 fr then 3rd and 4th column will get ramaining width of container  -->
+    <!--- as 50-50 %  -->
+    <!--- Lets say you have given the 1 fr to all 4 columns, then each one will get 25% of remaining  -->
+    <!--- width of container. If you make 2fr for 1st column and keep others as 1fr then -->
+    <!--- 1st one will get double the width which it currntly have and ramaining one will be  -->
+    <!--- splitted in ramaining 3.  -->
+    <!--- If you do  grid-template-columns : 1fr 1fr 1fr auto -->
+    <!--- Then 4th column will take the width which is needed for its content only.  -->
+    <!--- grid-template-columns : repeat(Number of how many columns we want to consider, their width)  -->
+    <!--- grid-template-columns : repeat(4, 1fr) is same as grid-template-columns : 1fr 1fr 1fr 1fr -->
+    <!--- We know that if we do grid-template-columns : 1fr 1fr 1fr then  -->
+    <!--- only 3 columns will get created, so 7 and 8 will go to 3rd row.  -->
+    <!--- Since we are using grid-row-columns for only 2 rows, the 7 and 8 will get get any height  -->
+    <!--- applied. So, in this case the 7 and 8 row will be called as implicit row and  -->
+    <!--- top 2 rows will be called as explict rows, because for top 2 rows, we have defined the sizes.  -->
+    <!--- 3rd one is implicit because it got added automatically and has no height. -->
+    <!--- We can style the implict rows also, but it is outside of this course.  -->
+    <!---  -->
+    <h1>
+      <a href="./CSS Grid/fr unit.html">Fr unit for columns</a>
+    </h1>
+    <!--.  -->
+    <!--.  -->
+    <!--- If you are going to use fr unit for grid-template-rows then it will work only if -->
+    <!--- continer has some height present of its own.  -->
+    <!--- In our case 1 grid element in the 1st row, has its own height of 150px  -->
+    <!--- So, 1st rows all elements are getting the height of 150px because we have used 1fr to 1st row. -->
+    <!--- Since row 2 also has 1 fr, it will also automaticlly get the height of 150px  -->
+    <!--- If you comment this 150px then all the grid cells will get the height which is needed for their   -->
+    <!--- content only. In this case whichever grid cell will have the biggest content, then -->
+    <!--- that grid cells height will be used. So, if 150px is commented, we need a height to our  -->
+    <!--- container, so then we will see all the grid rows will share the same height because of 1fr 1fr.  -->
+    <!--- Same as above, we can use 2fr and so on and also same working for auto keyword.  -->
+    <h1>
+      <a href="./CSS Grid/fr unit rows.html">Fr unit for rows</a>
+    </h1>
+  </body>
+</html>

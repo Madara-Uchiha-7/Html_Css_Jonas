@@ -1,0 +1,34 @@
+When we type any url and press enter 
+that url is sent as a request to the server by browser
+to where ever this website is hosted.
+The server receives the request and send the response back to the browser.
+
+Browsers can unserstand HTML, CSS and JS.
+The browser receives these 3 files from response.
+Using that code it will render the website.
+
+Note:
+When ever the files that make up the website are stored on the web server and 
+are then sent to the browser as they are, we say we have a static website.
+
+Udemy is a big website in which the content keeps on changing.
+Like rating, cources, etc.
+So to write application that are actully executed on we server.
+So developers use some kind of backend language.
+These backend languages take data from the database and assemble that data into the files which are 
+then send to the browser as the response.
+This whole process is called backend development.
+In this situation we say we have a dynamic website because the website is dynamically assmebled.
+
+HTML is resposible for the content of the Page.
+I.e. the text, the images, buttons etc.
+
+CSS is resposible for the presentation of the webpage. For styling and the laying out 
+of the elements.
+
+JS is the actual proramming language of the front end.
+It adds the dynamic and the interactive effects to the webpages.
+It allows us to manipulate the content and the css.
+
+
+

@@ -1,0 +1,192 @@
+/*! Below will make whole page margin and padding to 0. This I will allow us to style all of our elements as we want. */
+/*! This will also make buttet points/numbers of list invisible, because there will be no space left on the left side to show them. */
+/*.  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  /** We can change the color of the text using color property. */
+  /*.  */
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+
+  font-family: sans-serif;
+
+  text-transform: uppercase;
+
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+#author {
+  font-style: italic;
+}
+
+.related-author {
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+/** We can change the background of the text using the background-color property. */
+/*- We have the backgrond color to our header already, so lets add a padding to it. So, it will be easier for us to know.  */
+/*! When you select specific property and the go to inspect, then go to style tab, scroll down, you will see the box model  */
+/*! for that specific element. There you will see your padding, margin numbers which you have given. */
+/*! This also works when you select element from Elements tab.  */
+/*. padding : 20px; -> This will create the 20px padding for all 4 sizes.  */
+/*. This can also be used as a short hand  */
+/*. padding: left-padding right-padding top-padding bottom-padding;  */
+/*. Otherwise you can use padding-left: 40px; padding-right: 20px; padding-top: 30px; padding-bottom: 20px  */
+/*. If you do, padding: 20px 40px; then 20px will be applied on top and bottom, and 40px will be applied on left and right.  */
+/*. All of above is same is for border property. It is also a short hand, o.w. you can also use border-left: ; border-right: ; and so on.  */
+/*.  */
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+/** We can add the border using the border property */
+/*. It can accept multiple values i.e. more than one. Seperated by space.*/
+/*.  */
+aside {
+  background-color: #f7f7f7;
+
+  /*- border : width style-of-border color-of-border; */
+  border: 5px solid #1098ad;
+  padding: 50px 0; /*. This will add padding to top and bottom only */
+}
+
+/** font-weight is used to make our text bold */
+/** margin : 10px; This is again, as above same as border and padding. This is also a short-hand.  */
+/*. */
+li:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/*- Above we added a margin botton to each of the li, but for bottom one, we do not want it so lets remove it. */
+/*! We added a 0 for margin-bottom. Whenever we use 0, we do not specify the unit. */
+/*. */
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/*. We can select more than one element which are not nested using ","  */
+/*. We can also do element:some-pseudo-class, another-element and so on.*/
+/*.  */
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/*. */
+li:nth-child(2) {
+  color: red;
+}
+
+/*- Styling the hyperlinks using pseudo classes. */
+/*- Lets target all the ancher i.e. a tag which have the href attribute*/
+/** text-decoration is used to remove the line which is below the link. */
+/*.  */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/*- Lets add a style to the ancher elements which user has already visited */
+/*.  */
+a:visited {
+  color: #1098dd;
+}
+
+/*- Lets use the hover pseudo class. So, we apply the style whenever the user  */
+/*- hover over the link. */
+/** text-decoration can be used as a short hand property.  */
+/** text-decoration : text-decoration-line  text-decoration-style text-decoration-color */
+/*.  */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+
+/*- Lets see one more psudo class, lets add the style when we click on the ancher element. */
+/*. */
+a:active {
+  background-color: wheat;
+  font-style: italic;
+}
+
+/*! Note:  */
+/*! If there is a margin bottom of 20 pixel on top element. And bottom element has  */
+/*! margin top of 50 px. Then these 2 does not get added up e.g. 70px. This is called as a Collapsing Margins. */
+/*! This happens when 2 margins occupies the same space. In this case only one of them will be visible on the page. */
+/*! Usually the larger one will be visible.  */

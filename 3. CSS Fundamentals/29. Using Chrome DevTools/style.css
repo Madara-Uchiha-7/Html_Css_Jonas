@@ -1,0 +1,35 @@
+/* . 3 ways to open the developer tools
+. right click anywhere on the page and then click inspect.
+. 2nd one is on Apple Mac 
+. 3rd one is ctrl + shift + i
+
+. Once it open, there are tabs on the top of it.
+
+. Element tab: 
+. This is where you will see your exact html code of your file.
+. As you hover over each element in the element tab, that perticular element
+. will get highlighted on the mail browser screen.
+
+. On the right side pannel, there are more tabs.
+. Once of them is style tab.
+. Here we can see all the styles applied to each element.
+. If you select any one element from the Element tab, and in style tab,
+. you will be able to see the styles which are being applied to it.
+
+. There will be default style applied to some elements.
+. E.g. you may think why some texts are getting bored even if you've not applied the style bold using the style.css. 
+. So, scroll below in the Style tab and you will see "User Agent Stylesheet"
+. These are the default styles which are being applied to the elements.
+
+. For testing purpose, you can add your property : value to any element 
+. in the Style tab.
+
+. There may be some styles which are not visibe in it. E.g. :hover pseudo class.
+. In style tab, there is a button called :hov, click on it and select :hover,
+. this way you will also see that in the style tab.
+. This way we can check how the links see without hovering over them.
+. There are more options in :hov
+
+. On the main browser page, select specific element and right click and select inspect,
+. then Element tab will show directly that line in the HTML page.
+. */

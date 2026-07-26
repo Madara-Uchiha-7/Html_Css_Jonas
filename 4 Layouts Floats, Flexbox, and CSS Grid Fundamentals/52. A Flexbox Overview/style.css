@@ -1,0 +1,46 @@
+/* 
+- The element on which we want to use the flexbox is called the flex container.
+* display:flex 
+. This we need to set to that container.
+. All the children in this container, we call them flex items.
+. The direction in which these flex items are laid out is called main axis.
+. They start from the left to right.
+. Cross axis is top to bottom.
+
+- Flex container important properties:
+* gap:0 
+. This is to create the space between the flex items without using margin.
+
+* justify-content : flex-start(default) | flex-end | center | space-between | space-around | space-evenly
+. This is to align items horizontally i.e. in main axis.
+
+* align-items : stretch(default) | flex-start | flex-end | center | baseline
+. This is to align items along cross axis.
+
+* flex-direction : row(default) | row-reverse | column | column-reverse
+. This is to define which is the main axis.
+
+* flex-wrap : nowrap(default) | wrap | wrap-reverse
+. This is to allow items to wrap into a new line if they are too large.
+
+* align-content : stretch(default) | flex-start | flex-end | center | space-between | space-around
+. Only applies when there are multiple lines, that is flex-wrap : wrap
+
+
+- Flex items important properties:
+* align-auto : auto(default) | flex-start | flex-end | center | baseline
+. To override the align-items for individual flex items.
+
+* flex-grow : 0
+. To allow elements to grow, 0 means no, 1 means yes
+
+* flex-shrink : 1
+. To allow elements to shrink, 0 means no, 1 means yes
+
+* flex-basis : auto
+. To define an items width; instead of the width property.
+
+
+* flex : 0 1 auto
+. This is the shorthand.
+*/

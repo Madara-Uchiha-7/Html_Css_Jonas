@@ -1,0 +1,64 @@
+/** In last lecture, we saw that some elements of HTML share the same style properties.  */
+/** Lets see how to avoid this duplication while writing.  */
+/*. Syntax:  */
+/*. Use element_1, element_2 ... { Your Styles }  */
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  /*! serif is the default font. (Not sans-serif, this is the different one.)  */
+  font-family: sans-serif;
+}
+
+h1 {
+  color: blue;
+
+  font-size: 26px;
+
+  font-family: sans-serif;
+
+  text-transform: uppercase;
+
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+/** Make the text smaller of element p which is present in the footer element. But other p elements should not get affected. */
+/*. We can achieve this using descendant selector. */
+/*. Instead of comma, we use space to get the child p element in the footer element. */
+/*. This will select all the p elements which are present in all the footer elements. */
+/*.  */
+footer p {
+  font-size: 16px;
+}
+/*! The descendant selector is not a good approch. This makes the code hard to maintain. Use ids and class in HTML which will help in CSS. */

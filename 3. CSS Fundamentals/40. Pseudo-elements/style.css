@@ -1,0 +1,256 @@
+/*
+So, pseudo-elements are essentially elements that don't exist in the HTML but that we can still select and style in CSS.
+And some common examples of that are the first letter of a paragraph or the first line of a paragraph or of some other text, of course.
+
+pseude-elements are writtten using 2 colons.
+*/
+
+/*.  */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+.container {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  /*- Shortcut : margin : 0 auto;  */
+}
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  /** We can change the color of the text using color property. */
+  /*.  */
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+
+  font-family: sans-serif;
+
+  text-transform: uppercase;
+
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+#author {
+  font-style: italic;
+}
+
+.related-author {
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+/** We can add the border using the border property */
+/*. It can accept multiple values i.e. more than one. Seperated by space.*/
+/*.  */
+aside {
+  background-color: #f7f7f7;
+
+  /*- border : width style-of-border color-of-border; */
+  /* border: 5px solid #1098ad; */
+  padding: 50px 0; /*. This will add padding to top and bottom only */
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  width: 500px;
+}
+
+/** font-weight is used to make our text bold */
+/** margin : 10px; This is again, as above same as border and padding. This is also a short-hand.  */
+/*. */
+li:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/*- Above we added a margin botton to each of the li, but for bottom one, we do not want it so lets remove it. */
+/*! We added a 0 for margin-bottom. Whenever we use 0, we do not specify the unit. */
+/*. */
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/*. We can select more than one element which are not nested using ","  */
+/*. We can also do element:some-pseudo-class, another-element and so on.*/
+/*.  */
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/*. */
+li:nth-child(2) {
+  color: red;
+}
+
+/*- Styling the hyperlinks using pseudo classes. */
+/*- Lets target all the ancher i.e. a tag which have the href attribute*/
+/** text-decoration is used to remove the line which is below the link. */
+/*.  */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/*- Lets add a style to the ancher elements which user has already visited */
+/*.  */
+a:visited {
+  color: #1098dd;
+}
+
+/*- Lets use the hover pseudo class. So, we apply the style whenever the user  */
+/*- hover over the link. */
+/** text-decoration can be used as a short hand property.  */
+/** text-decoration : text-decoration-line  text-decoration-style text-decoration-color */
+/*.  */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+
+/*- Lets see one more psudo class, lets add the style when we click on the ancher element. */
+/*. */
+a:active {
+  background-color: wheat;
+  font-style: italic;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px; /*- 50 px from bottom */
+  right: 50px; /*- 50 px from right */
+}
+
+/*
+
+*/
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+p::first-line {
+  color: rebeccapurple;
+}
+
+/** Adjacent element selector or the adjacent sibling selector.  */
+/*. A sibling element is basically an element that is part of the same parent. So for example, here, this p is a sibling of this one, */
+/*. Means elements which has the same parent. */
+/*. Now, the adjacent sibling is a sibling that is actually the very next element in that parent. */
+/*. Lets select the paragraphs that comes only after h3  */
+/*. Use + to select the sibling.  */
+/*.  */
+h3 + p::first-line {
+  color: red;
+}
+
+h2 {
+  position: relative;
+}
+/** After and before pseudo elements.  */
+/*. So the after pseudo element creates a pseudo element that will automatically be the very first child  */
+/*. of the selected element. This can actually be very useful for some small cosmetic style for which  */
+/*. we don't want to necessarily add a new element to the HTML.  */
+/*. In inspect Elements tab, it will look like ::after inside the H2 element.  */
+/*. Any Pseudo element is nothing but a inline element. And so if we want to give it any padding, */
+/*. we want the box model to apply to it normally, right? And so in order to do that,  */
+/*. we need to render this element as an inline-block box.  */
+/*.  */
+h2::after {
+  content: "TOP"; /*! This is mandetory to have here as a 1st property. This can be empty string also. */
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  /*! Now we want to move it to top right in this H2 element, So lets make h2 position relative and this position will be absolute. */
+  position: absolute;
+  top: -15;
+  right: -25;
+}
+/*! If we do right : 25px means, move 25px on left from right side. */
+/*! If we do right : -25px  then it will move to right side. And will go partially outside of h2  */

@@ -1,0 +1,281 @@
+/*
+
+*/
+
+/*.  */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+.container {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  /*- Shortcut : margin : 0 auto;  */
+}
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  /** We can change the color of the text using color property. */
+  /*.  */
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+
+  font-family: sans-serif;
+
+  text-transform: uppercase;
+
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+#author {
+  font-style: italic;
+}
+
+.related-author {
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+
+nav {
+  /* margin-top: 20px; */
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: #f7f7f7;
+
+  /*- border : width style-of-border color-of-border; */
+  /* border: 5px solid #1098ad; */
+  padding: 50px 0; /*. This will add padding to top and bottom only */
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  width: 500px;
+}
+
+/*. */
+li:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/*. */
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/*.  */
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/*. */
+li:nth-child(2) {
+  color: red;
+}
+
+/*.  */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/*.  */
+a:visited {
+  color: #1098dd;
+}
+
+/*.  */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+
+/*. */
+a:active {
+  background-color: wheat;
+  font-style: italic;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px; /*- 50 px from bottom */
+  right: 50px; /*- 50 px from right */
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+p::first-line {
+  color: rebeccapurple;
+}
+
+h3 + p::first-line {
+  color: red;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15;
+  right: -25;
+}
+.main-header {
+  display: flex;
+  /*. Make sure to remove the top-margin if you have any to children */
+  /*. for better alignment.  */
+  /*. In our case I remove margin top for nav element  */
+  /*. Below will make flex items come to center vertically.  */
+  align-items: center;
+  /*. Below will make flex items come to center horizontally.  */
+  /*. But in this case we want a space in between in our 2 flex items.  */
+  justify-content: space-between;
+}
+
+/*. As we have done above, we need to do same for image and author.  */
+/*. Let us add a div as a perent element for them.  */
+.author-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /*. To make align-items properly, lets remove the margin bottom from the author  */
+  /*. This is done in below selector.  */
+  /*.  */
+  /*. Lets add margin bottom to whole container.  */
+  margin-bottom: 15px;
+}
+.author {
+  margin-bottom: 0;
+}
+
+/*. Lets do same for Related Posts. We want whole related Posts to right side. */
+/*. In that related Post there are li elements in which we have a image, link and author-name */
+/*. We need link and author name to be on the right side of the image and*/
+/*. we added a div as a parent element for this.  */
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+.related p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+}
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+aside {
+  flex-basis: 300px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.article {
+  flex: 0 0 825px;
+  margin-bottom: 0;
+}

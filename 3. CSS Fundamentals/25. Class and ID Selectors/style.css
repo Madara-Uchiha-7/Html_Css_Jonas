@@ -1,0 +1,85 @@
+/*- id and class attributes are used in the HTML file.  */
+/*- This helps us to locate the specific elements in better way in our CSS file. */
+/*- class attribute can have same value at other places while id can not have duplicate values. So, */
+/*- class allows us to select 1 or more elements while id will target only 1 at a time. */
+/*! If we have a class value in HTML which has 2 words then convension is to join them using -  */
+/*! e.g. class = "related-author"  */
+/*.  */
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: blue;
+
+  font-size: 26px;
+
+  font-family: sans-serif;
+
+  text-transform: uppercase;
+
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/** Lets target the element with id attribute from the HTML file. */
+/*. We do this using #id-name {} */
+/*.  */
+#author {
+  font-style: italic;
+}
+
+/*.  */
+/** Lets target the element with class attribute from the HTML file. */
+/*. We do this using .class-name {} */
+/*.  */
+.related-author {
+  font-size: 18px;
+
+  /*- font-weight: bold -> we can use to make text bold. */
+  font-weight: bold;
+}
+
+/** Removing the bullet points. */
+/*.  */
+.related {
+  list-style: none;
+}
+
+/*! In the real world we never use id's. We always use classes because by using classes we are prepared for the future. */

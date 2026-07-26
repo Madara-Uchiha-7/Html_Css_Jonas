@@ -1,0 +1,49 @@
+I am keeping the note file for this lecture.
+Otherwise CSS file will get big with comments.
+
+1. Every color can be represented by RGB i.e. red, green, blue
+
+2. Each of them can have the value from 0 to 255.
+  And then in total it will become 16.8 million different colors.
+
+3. For e.g. if we want only red then we will define 255, 0, 0
+  For while we give 255 255 255.
+  And all 0 will give us black.
+
+4. Using RGB model we can write color in 2 ways in CSS.
+  1. RGB/ RGBA notation:
+
+    1. With this we use RGB function.
+        e.g. rgb(255, 0, 0)
+
+    2. A in RGBA is called as alpha. This defines the transperancy. It comes under 0  to 1.
+        e.g. rgba(0, 255, 255, 0.5) or rgba(0, 255, 255, 1)
+        By adding transperancy, the other color or background content becomes visible from our transparant color.
+
+  2. Hexadecimal notation.
+      We use 0 to ff in this. ff is 255 in Hexadecimal scale.
+      e.g. #00ffff
+      We can use short hand in this.
+      We can use when all the colors are identical pairs, e.g. in above e.g. 0 is 2 times, middle f is 2 times and last f is 2 times.
+      So, we can also write #0ff
+
+5. We can generate color a color picker in VS Code. Write any color value and hover over it. VS code will give us the promot.
+  We use color property in CSS to define the color.
+
+6. We mostly use Hexadecimal notation, if we need transperancy only then we use rgba.
+
+7. In Hexadecimal or in rgb or rgba, if all the 3 numbers are same, then it means its a shade of grey color.
+    White and black are extreme ends of grey. There are total 256 greys.
+
+8. We can change the background of the text using the background-color property.
+
+9. We can add the border to our content using border property.
+  This is the property which can accept multiple values. We can give only one or more than 1. 
+  The values will be seperated by space:
+  border : width style-of-border color-of-border;
+
+  Such properties which can take more than one values are called as short hand properties.
+  If you do not want to use border property for all, then do below:
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1098ad;

@@ -1,0 +1,233 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header,
+section {
+  margin-bottom: 48px;
+}
+
+h2 {
+  margin-bottom: 48px;
+  font-size: 36;
+  letter-spacing: -0.5px;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+/* HEADER */
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 48px;
+}
+
+.header-text-box {
+  align-self: center;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.header-text {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+}
+
+/* FEATURES */
+.features-icon {
+}
+
+.features-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.features-text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+}
+
+.testimonial-box {
+  grid-column: 2 / -1;
+  align-self: center;
+}
+
+.testimonial-box h2 {
+  margin-bottom: 24px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* CHAIRS */
+.chair-box {
+  padding: 24px;
+}
+
+h3 {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.chair-details {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.chair-details li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.chair-details li:last-child {
+  margin-bottom: 0;
+}
+
+.chair-icon {
+}
+
+.chair-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+footer {
+  margin-bottom: 48px;
+  font-size: 14px;
+  color: #495057;
+}
+
+/** Typography  */
+
+/*. We want to use Inter font. So go to goole fonts. */
+/*. Search Inter. When that font page will open, there will be a style section which shows multiple font weights of Inter font.  */
+/*. As we know its better to not go below 400, so select 400 one. Click on "Select this Style"  */
+/*. Similarly select 500 and 700 one. Then Click on top right icon, copy the link given and paste it in head element.*/
+/*! This must be added before our css file tag in html.  */
+
+/*. We sent font family to inter in our body element. */
+/*. We added that font name in double quotes, this is not required but better to have it. */
+/*. We added  , after it, it means priority should be given to 'Inter' and then if not available, use sans-serif */
+
+/*. type-scale.com : Allows us to see the diff font sizes for our font.  */
+/*. Select the scale from the dropdown on this site. Then copy the px value which you like. */
+
+/*. We change h1 font size to 44px  */
+
+/*. When we select specific element in the inspect tab, on the right side of the style tab we have the computed tab.  */
+/*. in this you will see only your select element styles and you can also search specific style in it.  */
+
+/*. Then for h1 we added a line height and also followed the rule to stay below 1.5  */
+/*. Also added letter-spacing. -1 means we are removing space which it have.  */
+
+/*. Similarly we added some in .header-text */
+/*. Then we did same for h2, h3, .features-title, .features-text, .testimonial-text  */
+
+/*. In .testimonial-box h2 , we overriden the h2 font-size. We keep it 24 so that, line in h2 should stay as a one liner and some words*/
+/*. should not go below on line 2.  */
+
+/*. .chair-price, we added a font size, this caused the size increase of its 2 child elements at the same time, because its flex element.  */
+
+/** Colors  */
+/*. In our site, images have a lot of green color, like plants and sofa. */
+/*. We are using open color website. We went with "Teal" color.  */
+
+/*. Main color: #087f5b : Teal Color */
+/*. Gray color: #343a40 : Gray color  */
+/*. We added grey on body, so all the texts will get this.  */
+/*. Then  */
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  display: inline-block;
+  font-weight: 500;
+}
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+/*. We went to the cooler website, from dropdown select "Contrast Checker", we copied the Main color,   */
+/*. paste it in background color and in Text Color add #FFFFFF i.e. a white color. */
+/*. Then copy our Gray color which is used for text and paste it in Text color and in Background Color add #FFFFFF i.e. a white color.  */
+
+/*.  */
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+  /*. Padding will add space in element and content making a link look like a button.  */
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+/*. The text inside this section does not have any color property applied.  */
+/*. but since its parent that is ".testimonial-section", do have this color property below, the children will take it and apply it on their own. */
+.testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  padding: 24px;
+}
+
+/*. We also addded 'border-bottom: 8px solid #087f5b;' on body.  */

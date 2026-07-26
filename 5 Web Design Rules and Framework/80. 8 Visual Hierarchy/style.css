@@ -1,0 +1,34 @@
+/* 
+visual hierarchy is all about establishing which elements of a certain design
+are the most important ones. 
+This allows us to draw the attention to most imp elements.
+
+visual hierarchy is correctly established
+by a combination of position, colors, shadow, border and other elements.
+
+Visual hierarchy is about defining the "path" for users, to guide them through the page.
+
+E.g. On villa booking website,
+images will take more more preference so they will take more space, then payment card will take more 
+priority so it will have a shadow. Then we have a payment button. Then user may come to left side of a 
+payment card which is the description of that villa.
+The attention comes to small buttons like report etc.
+
+Position imp elements on the top of the page.
+
+Images draws a lot of attention, So if you want a user to go to headline first then better to not use the image.
+
+Use whitespace properly to create attention on specific area.
+
+Use text elements, use font size, font weight, color, whitespace to convey the importance.
+
+We should emphasize Titles, sub-titles, links, buttons, data points, icons.
+We can de emphasize less important text, like lables or secondary/ additional information.
+
+Emphasize an important component using background color, shadow, or border.
+
+What components to emphasize?
+Testimonials, call-to-action sections (e.g. sign up or sign in), highlight sections,
+preview cards, forms, pricing tables, important rows/columns in tables etc.
+
+*/

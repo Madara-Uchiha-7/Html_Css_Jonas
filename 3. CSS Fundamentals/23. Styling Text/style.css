@@ -1,0 +1,67 @@
+/** Apply style for all h1 tags  */
+h1 {
+  color: blue;
+
+  /*- font-size decide the size of your text in all the h1 elements. */
+  /*- px means pixels on the screen. */
+  font-size: 26px;
+
+  /*- font-family decides the different fonts for your text. */
+  /*- However, what's different in the case of CSS is that you cannot simply use a font family that you have installed on your computer */
+  /*- because that wouldn't then work for all the users that are going to visit your page in the future unless the also have that font installed on their */
+  /*- computer. So, there's a solution for that, we will talk about that later. */
+  font-family: sans-serif;
+
+  /*- text-transform decides if text will be lowercase or uppercase or etc.. */
+  text-transform: uppercase;
+
+  /*- font-style will change how the text looks e.g. italic */
+  font-style: italic;
+}
+
+/** Apply style for all h2 tags  */
+h2 {
+  /*- It is not necessary the h2 should look small than h1, CSS means asthetics. So, if h2 looks better as bigger in your case then its good.  */
+  font-size: 40px;
+
+  /*  */
+  font-family: sans-serif;
+}
+
+/** Apply style for all h3 tags  */
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+/** Apply style for all h4 tags  */
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  /*  */
+  /*- text-align will move the text to the center of the page. */
+  text-align: center;
+}
+
+/** Apply style for all p tags  */
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  /*  */
+  /*- line-height decides the space in the lines. */
+  /*- We did not mention the unit px this time. So, here 1.5 means that the line height will be one point five times the font size.  */
+  line-height: 1.5;
+
+  /*  */
+  /*! In HTML file, inside the p element, we have used <em>, <strong> and <a> elements. Even though we have added the code to style all the <p> elements, */
+  /*! <em>, <strong> and <a> elements are also getting the same style applied as the <p>. This is because of the inheritance.  */
+}
+
+/** Apply style for all li tags  */
+li {
+  font-family: sans-serif;
+  font-size: 20px;
+
+  /*! Default font-size is 16px of <li> element content.  */
+}

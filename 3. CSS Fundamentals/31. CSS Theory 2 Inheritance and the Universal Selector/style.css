@@ -1,0 +1,19 @@
+/*
+. In the style tab, under some of the selectors, you will see "Inherited from someSelector"
+. Inherited means from its parent element.
+. This means some selectors will have parent's properties applied.
+. For, e.g. add the body { color : red; }
+. What this will do is: 
+. All the elements which are of text, will automatically become red.
+. If elements of text, have there own color property then this color property of parent,
+. will get overridden.
+. 
+. Universal selector:
+. * {}
+. This selects each element on the page. 
+. And so this is useful if we actually want a certain property applied to all elements.
+. E.g. if we add a color: red property in the body{} then it will get inherited. 
+. But border-top in the body{} will not get inherited by all the elements in the html.
+. But if you put border-top in the *{} then all the elements will be forced to have the
+. top border.
+. */

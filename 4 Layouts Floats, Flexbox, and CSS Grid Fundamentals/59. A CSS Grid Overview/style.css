@@ -1,0 +1,71 @@
+/*  
+Using this we can span elements accross multiple rows and columns,
+overlap different elements and more.
+CSS Grid is not created to replace the flexbox.
+If you need a 1 D layout i.e. Multiple column structure in 1 row only then
+go with flexbox.
+Otherwise go with the CSS Grid.
+We also have a Row axis and Column Axis here as flexbox.
+Unlike flexbox we can not change the direction of row and column axis.
+
+Grid Lines:
+These are the lines which seperate the rows and columns.
+These are numbered from 1,2,3...n
+
+         1   2   3   4
+1        |---|---|---|
+         |   |   |   |   ← Row 1
+2        |---|---|---|
+         |   |   |   |   ← Row 2
+3        |---|---|---|
+
+So if we have 3 columns, then we have 4 grid lines And if we have 2 rows then we have 3 grid lines
+for the rows.
+
+The space in which element will be placed is called grid cells.
+So, if we have only 5 elements and if we are defining 3 columns
+then we know that they will be placed in 2 rows, and then we will 1 grid cell remain which will be empty.
+
+As we saw in last lecture,
+We can create the space in grid items, those are called as gutters or gaps.
+
+
+Grid track.
+This can represent one specific row and one specific column.
+From above diagram we have 3 column tracks and 2 grid tracks.
+
+
+Properties we can use on Grid Container:
+
+grid-template-rows : <track size>*
+grid-template-columns : <track size>*
+
+This is to establish the grid row and columns tracks. One length unit for each track.
+Any unit can be used, new fr fills unused space.
+
+row-gap: 0 <length>
+column-gap : 0 <length>
+To create the empty space in the tracks. 
+
+justify-items : stretch(default) | start | center | end
+align-items : stretch(default) | start | center | end
+To align items inside rows/ columns (horizontally / vertically)
+
+justify-content : start (default) | start | center | end ...
+align-content : start (default) | start | center | end ...
+To align the entire grid inside the grid container. Only applies if container is larger than 
+the grid.
+
+
+Properties of Grid Items:
+grid-column : <start line> / <end line> | span <number>
+grid-rows: <start line> / <end line> | span <number>
+
+To place a grid item into specific cell, based on the line numbers. span keyword can be used
+to span an item across more cells.
+
+justify-self : stretch | start | center | end
+aligh-self : stretch | start | center | end
+
+To override the justify-items/align-items for single items.
+*/

@@ -1,0 +1,83 @@
+/*- Typography is the art and technique of arranging type to make written language legible, readable  */
+/*- and also appealing when applied." */
+
+/*
+* Serif typeface:
+. Serif typefaces are the more traditional typefaces, and therefore we can use them to create more traditional
+. or classic looking interfaces. They also make the design convey trustworthiness for the user. 
+. And finally, it's also good for long text, for example in an article or an online magazine.
+
+* Sans-serif typeface:
+. Sans-serif typefaces usually look very clean and simple. And therefore, by using them, 
+. we can give any interface a very modern look and feel.
+
+* Rules :
+. Only use good and popular typefaces and play it safe.
+. I mean to not choose any crazy or weird looking typefaces.
+
+* Some good types of Sans-serif: These fonts are from google font and font squirrel
+. 1. Inter - This is a nice font
+. 2. Open Sans 
+. 3. Roboto 
+. 4. Montserrat
+. 5. Work Sense 
+. 6. Lato
+
+. These six typefaces might actually look almost the same but are not.
+
+* Some good types of serif: These fonts are from google font and font squirrel
+. 1. Merriweather
+. 2. Aleo
+. 3. Playfair Display 
+. 4. Cormorant
+. 5. Cardo 
+. 6. Lora
+
+- Now, many beginner designers think that they need to mix multiple typefaces in order to create a nice looking design, but that's actually not true.
+- So when you're just starting out, it's completely okay to use only one typeface on one page. And if you're really feeling adventurous,
+- then still limit your typefaces to two. If you use more than that, then your design will start looking like amateurish and strange.
+
+- But now, about actually choosing the right typeface for your design, again you will need to think about your website personality.
+- After then you decide between a Serif and a Sans-serif typeface
+
+* Good Font sizes and weights:
+. So when you're looking to choose a font size, you should limit your choices to make your life easier.
+. To do that, you can use a type scale tool or another predefined range of font sizes, because if you do that,
+. then you don't have to constantly think about coming up with font size values. And actually, we will do that in the big course project
+. and in this page project section also.
+
+. So for normal text, you should use a font size between 16 and 32 pixels.
+. E.g. the navigation bar text can have 16 px.
+. For a long text format, you can try a font size of 20 pixels or even bigger because if the user needs to read
+. something like a blog post or the comment made by author etc or company description. 
+
+. For big headlines, you can actually go really big with your font sizes, like even more than 50 pixels. 
+. And you can also make them really bold, like more than 600. And we didn't learn about these bold values yet,
+. but we will, maybe in the next lecture or maybe in our big course project. 
+
+. If it is a important sentence made by some big guy then we can give it 42px.
+
+- Now, the final rule about using good font sizes and weights, is to use a font weight that is not under 400.
+- So if you go below 400, that would be a light or really light text, and that is then hard to read.
+- So just don't go below 400, which is basically a regular font weight.
+
+. Try to use less than 75 characters per line. 65 - 72 chars per line, makes a text easy to read.
+
+. For a text with normal size, try to use a line height between 1.5 and two. Now if the text is really big, like a headline,
+. you can go below 1.5 and actually you can go really low, something like 1.1 or 1.2.
+
+. Now, if you use an oversized line height, then your text again becomes hard to read.
+
+. Now, another nice and very subtle rule that can make a lot of difference is that
+. if your headline kind of looks unnatural, you can try to decrease the letter spacing.
+. Now, what unnatural actually means will of course come from experience.
+
+. Next, another thing that you can try and which is actually very popular among designers,
+. is to use all caps for short titles and also making them bold and increase the letter spacing.
+
+. So usually on the web, we do never justify text. So it's somehow just a convention that basically no website ever justifies their text.
+. And so you should also follow that convention.
+. Now also about aligning text, you should usually not center text, unless we are talking about really small text blocks.
+. So you can just leave text like aligned to the left and not like in center if you have image in left of the text element.,
+
+*/
